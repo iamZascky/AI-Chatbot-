@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile - Chatbot Integration Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Solutif Media</h1>
+        <p>Your partner in AI and Digital Transformation</p>
+    </header>
+
+    <div class="container">
+        <h2>About Us</h2>
+        <p>This is a sample company profile page to demonstrate how easily the AI Chatbot Widget can be integrated into any website.</p>
+        <p>Notice the chat icon in the bottom right corner? Click it to start talking to our AI assistant. It has been trained on our company's PDF FAQ document.</p>
+        
+        <h2>How to integrate this into your site</h2>
+        <p>Simply paste the following script tag just before the closing <code>&lt;/body&gt;</code> tag on your HTML pages:</p>
+        <pre style="background: #eee; padding: 10px; border-radius: 5px;">
+&lt;script src="http://localhost:3000/widget.js"&gt;&lt;/script&gt;
+        </pre>
+    </div>
+
+    <!-- The Chatbot Widget Script -->
+    <script src="/widget.js"></script>
+
+</body>
+</html>
