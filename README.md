@@ -1,3 +1,11 @@
+---
+title: AIChatBot
+emoji: 🤖
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+---
 # AI Chatbot Company Profile
 
 A custom AI chatbot implementation built with Node.js, Express, and Google Gemini. This project demonstrates how to build a Retrieval-Augmented Generation (RAG) system to allow an AI assistant to answer questions based on a specific company profile and FAQ.
