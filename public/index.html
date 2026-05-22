@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Profile - Chatbot Integration Demo</title>
+    <title>ZASCKY_LABS // AI Chatbot Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: '#00f0ff',
+                        darkbg: '#050709',
+                        panelbg: '#0a0d14',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f7f6;
-            color: #333;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        .glass-box {
+            background: rgba(10, 13, 20, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
         }
-        h1, h2 {
-            color: #0056b3;
+        .glass-box:hover {
+            border-color: rgba(0, 240, 255, 0.3);
         }
     </style>
 </head>
-<body>
-
-    <header>
-        <h1>Welcome to Solutif Media</h1>
-        <p>Your partner in AI and Digital Transformation</p>
+<body class="bg-darkbg text-white min-h-screen flex flex-col relative selection:bg-cyber/20 selection:text-cyber">
+    <div class="absolute inset-0 pointer-events-none flex items-center justify-center opacity-30">
+        <div class="w-[600px] h-[600px] rounded-full bg-gradient-to-tr from-cyber/5 via-purple-500/5 to-transparent blur-3xl"></div>
+    </div>
+    
+    <header class="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex items-center justify-between border-b bg-panelbg/80 backdrop-blur-md border-white/5 shadow-lg">
+        <div class="flex items-center gap-2 group">
+            <span class="font-mono font-bold tracking-wider text-sm md:text-base text-white group-hover:text-cyber transition-colors">ZASCKY_LABS_2026 // AI_CORE</span>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyber/10 border border-cyber/20 text-cyber font-mono text-[10px] tracking-widest">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyber animate-pulse"></span>SYS_SECURE
+            </div>
+            <a href="https://zasckylab.vercel.app/" target="_blank" class="px-4 py-1.5 rounded bg-panelbg hover:bg-cyber/10 text-white hover:text-cyber border border-white/10 hover:border-cyber/40 font-mono text-xs tracking-wider transition-all">COMM_ON</a>
+        </div>
     </header>
 
-    <div class="container">
-        <h2>About Us</h2>
-        <p>This is a sample company profile page to demonstrate how easily the AI Chatbot Widget can be integrated into any website.</p>
-        <p>Notice the chat icon in the bottom right corner? Click it to start talking to our AI assistant. It has been trained on our company's PDF FAQ document.</p>
-        
-        <h2>How to integrate this into your site</h2>
-        <p>Simply paste the following script tag just before the closing <code>&lt;/body&gt;</code> tag on your HTML pages:</p>
-        <pre style="background: #eee; padding: 10px; border-radius: 5px;">
-&lt;script src="http://localhost:3000/widget.js"&gt;&lt;/script&gt;
-        </pre>
-    </div>
+    <main class="flex-1 relative pt-32 pb-16 px-4 md:px-8 max-w-4xl mx-auto flex flex-col items-center justify-center z-10 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-panelbg border border-cyber/30 text-cyber font-mono text-xs tracking-widest shadow-[0_0_15px_rgba(0,240,255,0.15)] mb-6">
+            <span class="w-2 h-2 rounded-full bg-cyber animate-pulse"></span>SYSTEM_ONLINE
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1] uppercase mb-6 font-sans">
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">AI Infrastructure</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-cyber to-blue-500 mt-2">Integration Hub</span>
+        </h1>
+        <p class="max-w-2xl text-sm sm:text-base md:text-lg text-[#9ca3af] font-light leading-relaxed mb-12">
+            A secure digital environment testing responsive AI interfaces, deploying custom RAG knowledge bases, and managing low-latency telemetry endpoints. Click the chat icon to establish a secure uplink.
+        </p>
+
+        <div class="glass-box p-8 w-full text-left relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyber to-transparent opacity-50"></div>
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-1 h-6 bg-cyber rounded-full"></div>
+                <h2 class="font-mono text-lg font-bold tracking-wider uppercase">DEPLOYMENT_INSTRUCTIONS</h2>
+            </div>
+            <p class="text-[#9ca3af] text-sm mb-4">Initialize the AI communication node by embedding the following script into your client architecture:</p>
+            
+            <div class="relative bg-[#030508] p-5 rounded border border-white/10 font-mono text-xs text-gray-300 overflow-x-auto shadow-inner group">
+                <div class="absolute top-0 right-0 px-2 py-1 bg-white/5 border-b border-l border-white/10 text-[9px] text-gray-500 transition-colors group-hover:text-cyber">SCRIPT_TAG</div>
+                <code>&lt;script src="http://localhost:3000/widget.js"&gt;&lt;/script&gt;</code>
+            </div>
+            
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-between border-t border-white/5 pt-4 gap-4">
+                <span class="font-mono text-[10px] text-gray-500 tracking-widest flex items-center gap-2"><div class="w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse"></div> STATUS: WAITING_FOR_UPLINK</span>
+                <span class="font-mono text-[10px] text-cyber tracking-widest px-2.5 py-1 bg-cyber/10 rounded border border-cyber/20">PORT: 3000</span>
+            </div>
+        </div>
+    </main>
 
     <!-- The Chatbot Widget Script -->
     <script src="/widget.js"></script>
