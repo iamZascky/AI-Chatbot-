@@ -324,7 +324,7 @@
         addLoading();
 
         // API Call
-        const API_URL = window.AI_CHATBOT_API_URL || 'http://localhost:3000/api/chat';
+        const API_URL = window.AI_CHATBOT_API_URL || '/api/chat';
         
         try {
             const response = await fetch(API_URL, {
